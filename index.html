@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<title>知識井 Knowledge Sharp</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" type="text/css" href="morecss/login.css">
+	</head>
+	<body bgcolor="#00cc99">
+	    <script src="http://code.jquery.com/jquery.js"></script>						<!-- jQuery source-->		
+		<script src="morejs/login.js"></script>
+
+		<div id="logo"><img src="picture/logo.png" width="250" height="250"></div>
+		<div class="container">
+
+				<br><br><br>			<!--space on top-->
+				
+			<!--Login Form-->
+			<div class="row">		
+				<br><br>
+				<div id="loginForm">
+					<div class="hero-unit" id="loghero-unit">
+						<form class="form-horizontal" action="verify_first.php" method="post" id="logform">						
+							<!--name inputbox-->
+							<div class="form-group">
+								<div class="col-lg-10">
+								  <center><input type="text" class="form-control" id="logname" name="logname" placeholder="Enter your login name"></center>
+								</div>
+							</div>
+							<br>
+							<!--password inputbox-->
+							<div class="form-group">
+								<div class="col-lg-10">
+								  <center><input type="password" class="form-control" id="logps" name="logps" placeholder="Password"></center>
+								</div>
+							</div>
+							<br>
+							
+							<!--submit button-->
+							<div class="form-group">
+								<center><button type="button" id="logbtn" class="btn btn-primary btn-xs" onclick="empty_name()">Login</button></center>
+								<br>
+							</div>
+							
+							<!--password lost link-->
+							<div class="form-group">
+								<center><a href="lost_passwd.html" id="lostps">Lost your password? ←</a></center>
+							</div>						
+						</form>
+						<br><br><br>
+					</div>					
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-lg-10">
+					<div class="form-group">
+						<center><font color="Maroon"><h4><b>首次登入不需輸入密碼</b></h4></font></center>
+						<center><font color="Navy"><h5><b>學生請輸入學號</b></h5></font></center>
+						<center><font color="Navy"><h5><b>教師與系辦人員請...</b></h5></font></center>
+					</div>
+				</div>
+			</div>
+			
+			<br><br><br>
+			<!--footer information-->
+			<div class="row">					
+						<p class="muted credit" id="copyright">
+						<!--Line 1-->
+						All Rights reserved. copyright © 2013 by Hackthonla, Taiwan R.O.C. 
+						</p>
+						<!--Line 2-->
+						<p class="muted credit">
+						<a href="project_intro.html" target"_blank">網站計畫</a>|
+						<a href="work_team.html" target="_blank">開發團隊</a> |	<!--CCUMIS + Hackthonla 都會會加進來-->
+						<a href="https://www.facebook.com/groups/165087747029043/" target="_blank">聯絡我們(Facebook)</a>  <!--目前為私人社團，之後會公開提供聯絡與意見回饋-->
+						</p>
+			</div>
+		
+		</div>
+	</body>
+</html>

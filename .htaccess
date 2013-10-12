@@ -1,0 +1,15 @@
+
+<Files mysql_config.php>
+order allow,deny
+deny from all
+</Files>
+
+<Files mailing_config.php>
+order allow,deny
+deny from all
+</Files>
+
+<Files err_log.php>
+order allow,deny
+deny from all
+</Files>
