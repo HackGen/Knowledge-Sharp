@@ -1,8 +1,12 @@
-
+#header{
+height: 130px;
+width: auto;
+background-color: white;
+}
 #logo{
-	width: 400px;
+  width: auto;
   float: left;
-	margin: auto;
+  padding: 0px 20px 0px 20px;
 }
 
 .hero-unit {
@@ -44,22 +48,25 @@
   font-size: 20px;
 }
 #lostps{
-  //color: #AAAAAA;
+  /*color: gray;*/
+  font-size: 20px;
 }
 
 #loghero-unit{
-  height: 150px;
-  width: 350px;
+  height: 340px;
+  width: 300px;
 }
 
 .container{
-  width:760px;
-  margin: auto;
+  background-color: rgba(0 ,204 ,153,0.5);
+  width:auto;
+  margin: 0px;
+  padding: 0px;
 }
 
 #loginForm{
   width: 500px; 
-  margin: auto;
+  margin-top: 30px;
 }
 
 #copyright{
@@ -72,6 +79,7 @@
 }
 
 #prezi{
+margin-top: 0px;
 margin-right: 20px;
 }
 
@@ -80,8 +88,18 @@ a{
   color: darkblue;
 }
 
+a:hover{
+	text-decoration:none;
+	color: blue;
+}
+
 a:visited{
 	text-decoration:none;
 	color: darkblue;
 }
 
+#text{
+font-size: 20px;
+line-height: 1em;
+
+}

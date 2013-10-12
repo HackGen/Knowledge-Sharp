@@ -2,7 +2,7 @@
 	<head>
 		<title>知識井 Knowledge Sharp</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<link rel="stylesheet" type="text/css" href="morecss/login.css">
+		<link rel="stylesheet" type="text/css" href="morecss/index.css">
 		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<style type="text/css">
 * {
@@ -15,8 +15,8 @@
 }
 #ad img, #ad .adBody {
 	position: absolute;
-	width: 105px;
-	height: 105px;
+	width: 130px;
+	height: 130px;
 	right: 0;
 	top: 0;
 }
@@ -35,41 +35,41 @@
 			// 先停止未完成的動畫後再進行新的動畫
 			// 圖片放大展示
 			$("a img, a .adBody", this).stop().animate({
-					width: 500,
-					height: 500
+					width: 720,
+					height: 720
 				}, 500);
 
 		}, function(){	// 當滑鼠移出時..
 			// 先停止未完成的動畫後再進行新的動畫
 			// 圖片恢復原狀
 			$("a img, a .adBody", this).stop().animate({
-					width: 105,
-					height: 105
+					width: 130,
+					height: 130,
 				}, 200);
 		});
 	});
 </script>
 	</head>
-	<body bgcolor="#00cc99">
+	<body>
+	<div id="header">
+	
 	    <script src="http://code.jquery.com/jquery.js"></script>						<!-- jQuery source-->		
 		<script src="morejs/login.js"></script>
-
-		<div id="logo"><img src="picture/logo.png" width="250" height="250"></div>
-				<div id="ad">
-		<a href="http://www.wowgame.tw">
-			<img src="picture/peel2.png" alt="WOWGame 讓你挖不完!" />
+	
+		<div id="ad">
+		<a>
+			<img src="picture/peel.png" alt="WOWGame 讓你挖不完!" />
 			<span class="adBody"></span>
 		</a>
 		</div>
+		</div>
+		
 		<div class="container">
-
-				<br><br><br>			<!--space on top-->
-				
-			<!--Login Form-->
 			<div class="row">		
-				<br><br>
-				<center><table>
+				<table>
 				<tr><td>
+				<div id="logo"><img src="picture/logo.png" width="250" height="250"></div>
+				</td><td>
 				<iframe id="prezi" src="http://prezi.com/embed/gnewodqbnxlq/?bgcolor=ffffff&amp;lock_to_path=1&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="550" height="400" frameBorder="0"></iframe>
 				</td><td>
 				<div id="loginForm">
@@ -102,19 +102,19 @@
 							</div>						
 						</form>
 						<br><br><br>
+						<div id="text">
+						<font color="Maroon"><h4><b>首次登入不需輸入密碼</b></h4></font>
+						<font color="Navy"><h5><b>學生請輸入學號</b></h5></font>
+						<font color="Navy"><h5><b>教師與系辦人員請...</b></h5></font>
+						</div>
 					</div>					
-				</div></td></tr></table></center>
+				</div>
+				
+						
+				</td></tr></table>
 			</div>
 			
-			<div class="row">
-				<div class="col-lg-10">
-					<div class="form-group">
-						<center><font color="Maroon"><h4><b>首次登入不需輸入密碼</b></h4></font></center>
-						<center><font color="Navy"><h5><b>學生請輸入學號</b></h5></font></center>
-						<center><font color="Navy"><h5><b>教師與系辦人員請...</b></h5></font></center>
-					</div>
-				</div>
-			</div>
+			
 			
 			<br><br><br>
 			<!--footer information-->
