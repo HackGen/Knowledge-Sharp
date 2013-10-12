@@ -10,9 +10,12 @@ More Provision
 ==============
 * Programming and Web Design Tutorial
 
+Team 
+==============
+<Name>
+Hackthonla @ SITCON 2013 Hackgen
 
-Team Members
-=============
-* Veck Hsiao ( National Chengchi University )
-* Wade Chen ( National Chiao Tung University )
-* Michelle Cheng ( National Taiwan University )
+<Members>
+* [Veck Hsiao](fbukevin@gmail.com) ( National Chengchi University )   
+* [Wade Chen](wade5300606@hotmail.com) ( National Chiao Tung University )
+* [Michelle Cheng](cacainside@gmail.com) ( National Taiwan University )
