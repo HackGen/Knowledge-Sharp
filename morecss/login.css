@@ -6,13 +6,13 @@
 }
 
 .hero-unit {
-  padding: 60px;
+  padding: 30px;
   margin-bottom: 30px;
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 200;
-  line-height: 30px;
+  line-height: 15px;
   color: inherit;
-  background-color: #eeeeee;
+  background:rgba(255, 255, 255, 0.5);
   -webkit-border-radius: 6px;
      -moz-border-radius: 6px;
           border-radius: 6px;
@@ -30,26 +30,36 @@
   line-height: 30px;
 }
 
-#logname, #logps, #logbtn{
-	width: 300px;
+#logname, #logps{
+  border: 1.5px solid #b2b2b2;
+  width: 300px;
+  height: 30px;
+  font-size: 20px;
 }
-
+#logbtn
+{
+  border: 1.5px solid #b2b2b2;
+  width: 70px;
+  height: 30px;
+  font-size: 20px;
+}
 #lostps{
-	color: #AAAAAA;
+  //color: #AAAAAA;
 }
 
 #loghero-unit{
-	height: 200px;
+  height: 150px;
+  width: 350px;
 }
 
 .container{
-	width:760px;
-	margin: auto;
+  width:760px;
+  margin: auto;
 }
 
 #loginForm{
-	width: 500px;	
-	margin: auto;
+  width: 500px; 
+  margin: auto;
 }
 
 #copyright{
@@ -59,6 +69,10 @@
 
 .muted{
 	text-align: center;
+}
+
+#prezi{
+margin-right: 20px;
 }
 
 a{

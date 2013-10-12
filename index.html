@@ -3,12 +3,64 @@
 		<title>知識井 Knowledge Sharp</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<link rel="stylesheet" type="text/css" href="morecss/login.css">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<style type="text/css">
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+#ad {
+	position: relative;
+}
+#ad img, #ad .adBody {
+	position: absolute;
+	width: 105px;
+	height: 105px;
+	right: 0;
+	top: 0;
+}
+#ad img {
+	z-index: 10;
+}
+#ad .adBody {
+	overflow: hidden;
+	background: url(picture/adBody.gif) no-repeat right top;
+}
+</style>
+<script type="text/javascript">
+	$(function(){
+		// 幫 #ad 加上 hover() 事件
+		$("#ad").hover(function(){	// 當滑鼠移進時..
+			// 先停止未完成的動畫後再進行新的動畫
+			// 圖片放大展示
+			$("a img, a .adBody", this).stop().animate({
+					width: 500,
+					height: 500
+				}, 500);
+
+		}, function(){	// 當滑鼠移出時..
+			// 先停止未完成的動畫後再進行新的動畫
+			// 圖片恢復原狀
+			$("a img, a .adBody", this).stop().animate({
+					width: 105,
+					height: 105
+				}, 200);
+		});
+	});
+</script>
 	</head>
 	<body bgcolor="#00cc99">
 	    <script src="http://code.jquery.com/jquery.js"></script>						<!-- jQuery source-->		
 		<script src="morejs/login.js"></script>
 
 		<div id="logo"><img src="picture/logo.png" width="250" height="250"></div>
+				<div id="ad">
+		<a href="http://www.wowgame.tw">
+			<img src="picture/peel2.png" alt="WOWGame 讓你挖不完!" />
+			<span class="adBody"></span>
+		</a>
+		</div>
 		<div class="container">
 
 				<br><br><br>			<!--space on top-->
@@ -16,6 +68,10 @@
 			<!--Login Form-->
 			<div class="row">		
 				<br><br>
+				<center><table>
+				<tr><td>
+				<iframe id="prezi" src="http://prezi.com/embed/gnewodqbnxlq/?bgcolor=ffffff&amp;lock_to_path=1&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined" width="550" height="400" frameBorder="0"></iframe>
+				</td><td>
 				<div id="loginForm">
 					<div class="hero-unit" id="loghero-unit">
 						<form class="form-horizontal" action="verify_first.php" method="post" id="logform">						
@@ -47,7 +103,7 @@
 						</form>
 						<br><br><br>
 					</div>					
-				</div>
+				</div></td></tr></table></center>
 			</div>
 			
 			<div class="row">
