@@ -76,7 +76,7 @@ else//not the first time
 	echo "<br>Query password is ".$passwd;
 	*/
 	
-	header("Location: main.html");
+	header("Location: menu.html");
 	exit();
 }
  

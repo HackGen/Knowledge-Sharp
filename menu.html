@@ -1,0 +1,126 @@
+<html>
+<head>
+		<title>知識井 Knowledge Sharp</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<style type="text/css">
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+#ad {
+	position: relative;
+}
+#ad img, #ad .adBody {
+	position: absolute;
+	width: 130px;
+	height: 130px;
+	right: 0;
+	top: 0;
+}
+#ad img {
+	z-index: 10;
+}
+#ad .adBody {
+	overflow: hidden;
+	background: url(picture/adBody.gif) no-repeat right top;
+}
+</style>
+<script type="text/javascript">
+	$(function(){
+		// 幫 #ad 加上 hover() 事件
+		$("#ad").hover(function(){	// 當滑鼠移進時..
+			// 先停止未完成的動畫後再進行新的動畫
+			// 圖片放大展示
+			$("a img, a .adBody", this).stop().animate({
+					width: 720,
+					height: 720
+				}, 500);
+
+		}, function(){	// 當滑鼠移出時..
+			// 先停止未完成的動畫後再進行新的動畫
+			// 圖片恢復原狀
+			$("a img, a .adBody", this).stop().animate({
+					width: 130,
+					height: 130,
+				}, 200);
+		});
+	});
+</script>
+<link rel="stylesheet" type="text/css" href="morecss/style.css" />
+<script src="morejs/utils.js"></script>
+<script src="morejs/flip-card.js"></script>
+<style media="screen">
+</style>
+	</head>
+	<body>
+	<div id="header">
+	
+	    <script src="http://code.jquery.com/jquery.js"></script>						<!-- jQuery source-->		
+		<script src="morejs/login.js"></script>
+	
+		<div id="ad">
+		<a>
+			<img src="picture/peel.png" alt="WOWGame 讓你挖不完!" />
+			<span class="adBody"></span>
+		</a>
+		</div>
+		</div>
+		
+<div class="row">		
+<table id="tttt">
+	<tr><td>
+		<div id="logo"><img src="picture/logo.png" width="250" height="250"></div>
+	</td><td>
+
+	<section class="container">
+    <div id="card">
+	  <figure class="front"></figure>
+      <figure class="back"></figure>
+	</div>
+	</section>
+	</td><td>
+	
+	<section class="container">
+    <div id="card2">
+      <figure class="front"></figure>
+      <figure class="back"></figure>
+    </div>
+	</section>
+	</td><td>
+	
+	<section class="container">
+    <div id="card3">
+      <figure class="front"></figure>
+      <figure class="back"></figure>
+    </div>
+	</section>
+	</td><td>
+	
+	<section class="container">
+    <div id="card4">
+      <figure class="front"></figure>
+      <figure class="back"></figure>
+    </div>
+	</section>
+	</td></tr>
+</table>
+
+		<!--footer information-->
+		<div class="row11">					
+				<p class="muted credit" id="copyright">
+			<!--Line 1-->
+			All Rights reserved. copyright © 2013 by Hackthonla, Taiwan R.O.C. 
+		</p>
+			<!--Line 2-->
+			<p class="muted credit">
+			<a href="project_intro.html" target"_blank">網站計畫</a>|
+			<a href="work_team.html" target="_blank">開發團隊</a> |	<!--CCUMIS + Hackthonla 都會會加進來-->
+			<a href="https://www.facebook.com/groups/165087747029043/" target="_blank">聯絡我們(Facebook)</a>  <!--目前為私人社團，之後會公開提供聯絡與意見回饋-->
+		</p>
+		</div>
+		
+		</div>
+	</body>
+</html>

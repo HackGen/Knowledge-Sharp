@@ -1,0 +1,333 @@
+#tttt{
+background-color: rgba(0 ,204 ,153,0.5);
+
+}
+#header{
+height: 130px;
+width: auto;
+background-color: white;
+}
+#logo{
+  width: auto;
+  float: left;
+  padding: 0px 20px 0px 20px;
+}
+
+.hero-unit {
+  padding: 30px;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 200;
+  line-height: 15px;
+  color: inherit;
+  background:rgba(255, 255, 255, 0.5);
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+}
+
+.hero-unit h1 {
+  margin-bottom: 0;
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: inherit;
+}
+
+.hero-unit li {
+  line-height: 30px;
+}
+
+#logname, #logps{
+  border: 1.5px solid #b2b2b2;
+  width: 300px;
+  height: 30px;
+  font-size: 20px;
+}
+#logbtn
+{
+  border: 1.5px solid #b2b2b2;
+  width: 70px;
+  height: 30px;
+  font-size: 20px;
+}
+#lostps{
+  /*color: gray;*/
+  font-size: 20px;
+}
+
+#loghero-unit{
+  height: 340px;
+  width: 300px;
+}
+
+.container{
+  background-color: rgba(0 ,204 ,153,0.5);
+  width:auto;
+  margin: 0px;
+  padding: 0px;
+}
+
+#loginForm{
+  width: 500px; 
+  margin-top: 30px;
+}
+
+#copyright{
+	color: darkblue;
+}
+
+
+.muted{
+	text-align: center;
+}
+
+#prezi{
+margin-top: 0px;
+margin-right: 20px;
+}
+
+a{
+	text-decoration:none;
+  color: darkblue;
+}
+
+a:hover{
+	text-decoration:none;
+	color: blue;
+}
+
+a:visited{
+	text-decoration:none;
+	color: darkblue;
+}
+
+#text{
+font-size: 20px;
+line-height: 1em;
+
+}
+
+figure {
+  margin: 0;
+}
+
+	
+.container {
+    width: 250px;
+    height: 260px;
+    position: relative;
+    margin: 0 auto 40px;
+    border: 1px solid #CCC;
+    -webkit-perspective: 800px;
+       -moz-perspective: 800px;
+        -o-perspective: 800px;
+            perspective: 800px;
+    }
+
+#card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+      -webkit-transition: -webkit-transform 1s;
+         -moz-transition: -moz-transform 1s;
+           -o-transition: -o-transform 1s;
+              transition: transform 1s;
+      -webkit-transform-style: preserve-3d;
+         -moz-transform-style: preserve-3d;
+           -o-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+    }
+
+#card.flipped {
+      -webkit-transform: rotateY( 180deg );
+         -moz-transform: rotateY( 180deg );
+           -o-transform: rotateY( 180deg );
+              transform: rotateY( 180deg );
+    }
+
+#card figure {
+      display: block;
+      height: 100%;
+      width: 100%;
+      line-height: 260px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      font-size: 140px;
+      position: absolute;
+      -webkit-backface-visibility: hidden;
+         -moz-backface-visibility: hidden;
+           -o-backface-visibility: hidden;
+              backface-visibility: hidden;
+    }
+
+#card .front {
+      background-image:url(../picture/class.png);
+	  background-repeat: no-repeat;
+	  background-size: contain;
+    }
+
+#card .back {
+      
+      -webkit-transform: rotateY( 180deg );
+         -moz-transform: rotateY( 180deg );
+           -o-transform: rotateY( 180deg );
+              transform: rotateY( 180deg );
+    }
+	
+/*---------------------------*/
+	
+	#card2 {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      -webkit-transition: -webkit-transform 1s;
+         -moz-transition: -moz-transform 1s;
+           -o-transition: -o-transform 1s;
+              transition: transform 1s;
+      -webkit-transform-style: preserve-3d;
+         -moz-transform-style: preserve-3d;
+           -o-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+    }
+
+    #card2.flipped {
+      -webkit-transform: rotateY( 180deg );
+         -moz-transform: rotateY( 180deg );
+           -o-transform: rotateY( 180deg );
+              transform: rotateY( 180deg );
+    }
+
+    #card2 figure {
+      display: block;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      font-weight: bold;
+      font-size: 140px;
+      position: absolute;
+      -webkit-backface-visibility: hidden;
+         -moz-backface-visibility: hidden;
+           -o-backface-visibility: hidden;
+              backface-visibility: hidden;
+    }
+
+    #card2 .front {
+      background-image:url(../picture/project.png);
+	  background-repeat: no-repeat;
+	  background-size: cover;
+    }
+
+    #card2 .back {
+      
+      -webkit-transform: rotateY( 180deg );
+         -moz-transform: rotateY( 180deg );
+           -o-transform: rotateY( 180deg );
+              transform: rotateY( 180deg );
+    }
+/*-------3-------------------*/
+	
+	#card3 {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      -webkit-transition: -webkit-transform 1s;
+         -moz-transition: -moz-transform 1s;
+           -o-transition: -o-transform 1s;
+              transition: transform 1s;
+      -webkit-transform-style: preserve-3d;
+         -moz-transform-style: preserve-3d;
+           -o-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+    }
+
+    #card3.flipped {
+      -webkit-transform: rotateY( 180deg );
+         -moz-transform: rotateY( 180deg );
+           -o-transform: rotateY( 180deg );
+              transform: rotateY( 180deg );
+    }
+
+    #card3 figure {
+      display: block;
+      height: 100%;
+      width: 100%;
+      line-height: 260px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      font-size: 140px;
+      position: absolute;
+      -webkit-backface-visibility: hidden;
+         -moz-backface-visibility: hidden;
+           -o-backface-visibility: hidden;
+              backface-visibility: hidden;
+    }
+
+    #card3 .front {
+     background-image:url(../picture/prog.png);
+	 background-repeat: no-repeat;
+	 background-size: cover;
+    }
+
+    #card3 .back {
+     
+      -webkit-transform: rotateY( 180deg );
+         -moz-transform: rotateY( 180deg );
+           -o-transform: rotateY( 180deg );
+              transform: rotateY( 180deg );
+    }
+
+	/*--------4------------------*/
+	
+	#card4 {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      -webkit-transition: -webkit-transform 1s;
+         -moz-transition: -moz-transform 1s;
+           -o-transition: -o-transform 1s;
+              transition: transform 1s;
+      -webkit-transform-style: preserve-3d;
+         -moz-transform-style: preserve-3d;
+           -o-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+    }
+
+    #card4.flipped {
+      -webkit-transform: rotateY( 180deg );
+         -moz-transform: rotateY( 180deg );
+           -o-transform: rotateY( 180deg );
+              transform: rotateY( 180deg );
+    }
+
+    #card4 figure {
+      display: block;
+      height: 100%;
+      width: 100%;
+      line-height: 260px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      font-size: 140px;
+      position: absolute;
+      -webkit-backface-visibility: hidden;
+         -moz-backface-visibility: hidden;
+           -o-backface-visibility: hidden;
+              backface-visibility: hidden;
+    }
+
+    #card4 .front {
+      background-image:url(../picture/lab.png);
+	  background-repeat: no-repeat;
+	  background-size: contain;
+    }
+
+    #card4 .back {
+     
+      -webkit-transform: rotateY( 180deg );
+         -moz-transform: rotateY( 180deg );
+           -o-transform: rotateY( 180deg );
+              transform: rotateY( 180deg );
+    }
