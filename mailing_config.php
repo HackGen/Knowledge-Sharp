@@ -2,9 +2,9 @@
 <?php    
 include("PHPMailer-master/class.phpmailer.php"); 		//匯入PHPMailer類別       
 
-function send_passwd($dest, $receiver, $password)
+function mail_config($mail)
 {
-	$mail= new PHPMailer(); 							//建立新物件        
+        
 	$mail->IsSMTP(); 									//設定使用SMTP方式寄信        
 	$mail->SMTPAuth = true; 							//設定SMTP需要驗證        
 	$mail->SMTPSecure = "ssl"; 							//Gmail的SMTP主機需要使用SSL連線   
@@ -16,7 +16,14 @@ function send_passwd($dest, $receiver, $password)
 	$mail->Password = "simple life"; 					//設定驗證密碼        
 		  
 	$mail->From = "fbukevin@gmail.com";					//設定寄件者信箱        (之後應該開一個專用或是改用臉書社團的mail?)
-	$mail->FromName = "CCUMISKM";						//設定寄件者姓名        
+	$mail->FromName = "CCUMISKM";						//設定寄件者姓名 
+
+}
+
+function send_passwd($dest, $receiver, $password)
+{
+	$mail= new PHPMailer(); 							//建立新物件
+	mail_config($mail);       
 		  
 	$mail->Subject = "Password Information"; 			//設定郵件標題        
 	$mail->Body = "Hello, ".$receiver."! 你已經啟用了 中正資管知識加值系統 (CCUMISKM)<br>您首次登入的密碼為 : ".$password; 	//設定郵件內容        
@@ -34,5 +41,29 @@ function send_passwd($dest, $receiver, $password)
 		echo "Message sent!";        
 		return true;
 	}   
+}//end_of_function
+
+function lost_passwd($dest, $reciever, $password)
+{
+	$mail= new PHPMailer();
+	mail_config($mail);
+
+	$mail->Subject = "Password Query";
+	$mail->Body = "Hello, $reciever! 你的密碼是：$password";
+	$mail->IsHTML(true);
+	$mail->AddAddress($dest, $reciever);
+
+	if(!$mail->Send()) 
+	{        
+		echo "Mailer Error: " . $mail->ErrorInfo;        
+		/*TODO: 以後這裡應該要開一個 Log 檔*/
+		return false;
+	} 
+	else 
+	{        
+		echo "Message sent!";        
+		return true;
+	}   
+
 }//end_of_function
 ?>  
