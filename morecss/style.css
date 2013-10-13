@@ -13,60 +13,8 @@ background-color: white;
   padding: 0px 20px 0px 20px;
 }
 
-.hero-unit {
-  padding: 30px;
-  margin-bottom: 30px;
-  font-size: 28px;
-  font-weight: 200;
-  line-height: 15px;
-  color: inherit;
-  background:rgba(255, 255, 255, 0.5);
-  -webkit-border-radius: 6px;
-     -moz-border-radius: 6px;
-          border-radius: 6px;
-}
 
-.hero-unit h1 {
-  margin-bottom: 0;
-  font-size: 60px;
-  line-height: 1;
-  letter-spacing: -1px;
-  color: inherit;
-}
 
-.hero-unit li {
-  line-height: 30px;
-}
-
-#logname, #logps{
-  border: 1.5px solid #b2b2b2;
-  width: 300px;
-  height: 30px;
-  font-size: 20px;
-}
-#logbtn
-{
-  border: 1.5px solid #b2b2b2;
-  width: 70px;
-  height: 30px;
-  font-size: 20px;
-}
-#lostps{
-  /*color: gray;*/
-  font-size: 20px;
-}
-
-#loghero-unit{
-  height: 340px;
-  width: 300px;
-}
-
-.container{
-  background-color: rgba(0 ,204 ,153,0.5);
-  width:auto;
-  margin: 0px;
-  padding: 0px;
-}
 
 #loginForm{
   width: 500px; 
@@ -118,7 +66,8 @@ figure {
     height: 260px;
     position: relative;
     margin: 0 auto 40px;
-    border: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+	padding-right: 10px ;
     -webkit-perspective: 800px;
        -moz-perspective: 800px;
         -o-perspective: 800px;
@@ -266,9 +215,9 @@ figure {
     }
 
     #card3 .front {
-     background-image:url(../picture/prog.png);
+	 background-image:url(../picture/prog.png);
 	 background-repeat: no-repeat;
-	 background-size: cover;
+	 background-size: contain;
     }
 
     #card3 .back {

@@ -1,0 +1,59 @@
+#tttt{
+background-color: rgba(0 ,204 ,153,0.5);
+
+}
+#header{
+height: 100px;
+width: auto;
+background-color: white;
+}
+#logo{
+  width: auto;
+  float: left;
+  padding: 0px 20px 0px 20px;
+}
+
+#loginForm{
+  width: 500px; 
+  margin-top: 30px;
+}
+
+#copyright{
+	color: darkblue;
+}
+
+
+.muted{
+	text-align: center;
+}
+
+#prezi{
+margin-top: 0px;
+margin-right: 20px;
+}
+
+
+
+#text{
+font-size: 20px;
+line-height: 1em;
+
+}
+
+figure {
+  margin: 0;
+}
+
+	
+.container {
+    width: 250px;
+    height: 260px;
+    position: relative;
+    margin: 0 auto 40px;
+    border-right: 1px solid #CCC;
+	padding-right: 10px ;
+    -webkit-perspective: 800px;
+       -moz-perspective: 800px;
+        -o-perspective: 800px;
+            perspective: 800px;
+    }
