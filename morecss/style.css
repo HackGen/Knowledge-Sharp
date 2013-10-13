@@ -152,6 +152,8 @@ figure {
       display: block;
       height: 100%;
       width: 100%;
+      line-height: 260px;
+      color: white;
       text-align: center;
       font-weight: bold;
       font-size: 140px;
@@ -163,13 +165,13 @@ figure {
     }
 
     #card2 .front {
-      background-image:url(../picture/project.png);
-	  background-repeat: no-repeat;
-	  background-size: cover;
+	 background-image:url(../picture/project.png);
+	 background-repeat: no-repeat;
+	 background-size: contain;
     }
 
     #card2 .back {
-      
+     
       -webkit-transform: rotateY( 180deg );
          -moz-transform: rotateY( 180deg );
            -o-transform: rotateY( 180deg );

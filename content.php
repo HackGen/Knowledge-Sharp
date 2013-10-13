@@ -1,3 +1,22 @@
+<?php
+$p = $_GET['a'];
+if ($p == 1)
+{
+	$p=null;
+}
+else if( $p == 2)
+{
+	$p='project_list.html';
+}
+else if( $p == 3)
+{
+}
+else if( $p == 4 )
+{
+	$p='grad_school.html';
+}
+
+?>
 <html>
 <head>
 		<title>知識井 Knowledge Sharp</title>
@@ -100,22 +119,27 @@
 	<ul>
 		<li>
 			<a id="t1" class="aa" href="menu.html">Home
+				<div></div>
 			</a>
 		</li>
 		<li>
 			<a id="t2" class="aa" href="project_list.html" target="iframe_a">專題知識庫
+				<div></div>
 			</a>
 		</li>
 		<li>
 			<a id="t3" class="aa" href="#">課程資料庫
+				<div></div>
 			</a>
 		</li>
 		<li>
-			<a id="t4" class="aa" href="#">升學經驗談				
+			<a id="t4" class="aa" href="grad_school.html" target="iframe_a">升學經驗談
+				<div></div>
 			</a>
 		</li>
 		<li>
 			<a id="t5" class="aa" href="#">程式網頁設計教學
+				<div></div>
 			</a>
 		</li>
 	</ul>
@@ -125,7 +149,7 @@
 	<tr><td>
 		<div id="logo"><img src="picture/logo.png" width="250" height="250"></div>
 	</td><td>
-		<iframe src="http://www.yahoo.com.tw" name="iframe_a" id="iframe_a" width="1000" height="400"></iframe>
+		<iframe src="<?php echo $p; ?>" name="iframe_a" id="iframe_a" width="1000" height="400"></iframe>
 	</td></tr>
 </table>
 
