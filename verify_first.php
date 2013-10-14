@@ -4,8 +4,8 @@ require_once("mailing_config.php");
 
 	
 /*query and check if the user name is in table*/
-$login_name = trim($logname["logname"]);
-$sql = "SELECT * FROM `user` WHERE `u_log_name` = '".$logname."';";
+$login_name = trim($_POST["logname"]);
+$sql = "SELECT * FROM `user` WHERE `u_log_name` = '".$login_name."';";
 $query = mysql_query($sql) or die ("MySQL query failed.");
 $result = mysql_fetch_row($query);
 if(empty($result))	/*if no entry in table, mysql_query() still return an resource but nothing in it*/
@@ -38,7 +38,7 @@ if($act_time == "0000-00-00 00:00:00")		//first time login, the act_time in tabl
 		/*Modify the act_time in table*/
 		date_default_timezone_set("Asia/Taipei"); 	//setting time zone
 		$active_time = date("Y-m-d H:i:s");			//get tiem in the same format of mysql
-		$active_sql = "UPDATE  `ccumiskm`.`user` SET  `act_time` =  '".$active_time."' WHERE  `user`.`u_log_name` = '".$logname."';";
+		$active_sql = "UPDATE  `ccumiskm`.`user` SET  `act_time` =  '".$active_time."' WHERE  `user`.`u_log_name` = '".$login_name."';";
 		$active_query = mysql_query($active_sql) or die("Time update failed!");
 		
 		echo "<br>您的帳戶已經啟用，請至您註冊的電子信箱 ".$reg_mail." 收信查看密碼，並以此密碼重新登入, 謝謝您！";
@@ -56,7 +56,7 @@ if($act_time == "0000-00-00 00:00:00")		//first time login, the act_time in tabl
 }
 else//not the first time
 {	
-	if(trim($logps["logps"])=="")	// Check if the received password is empty
+	if(trim(($logps=$_POST["logps"]))=="")	// Check if the received password is empty
 	{
 		echo "<script>alert('請輸入您的密碼!');location.replace('index.html');</script>";
 		exit();

@@ -1,7 +1,7 @@
 <?php
 require_once("mysql_config.php");
 require_once("mailing_config.php");
-
+header("Content-Type: text/html; charset=utf8");
 
 /*query and check if the user name is in table*/
 $uname = $_POST["username"];
