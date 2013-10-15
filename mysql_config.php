@@ -3,15 +3,15 @@
 
 	/*connection parameters*/
 	$dbhost = 'localhost';
-    $dbuser = 'knowledgesharp';
-    $dbpass = 'hackthonla';
-    $dbname = 'knowledgesharp';
+    	$dbuser = 'knowledgesharp';
+    	$dbpass = 'DB PASSWD ON YOUR HOST';
+    	$dbname = 'knowledgesharp';
 	
 	/*connecting*/
 	$conn = mysql_connect($dbhost, $dbuser, $dbpass) or die('Error with MySQL connection');
 	
 	/*setting encode and select database*/
 	mysql_query("SET NAMES 'utf8'");
-    mysql_select_db($dbname);
+    	mysql_select_db($dbname);
 	
 ?>
