@@ -7,6 +7,7 @@ This is a knowledge repository made for college student to share their own:
 
 這個專案分享台灣國內各大專院校有畢業專題的校系，各組學生的個人與組經驗, 目的是希望透過傳承經驗，提供畢業校友一個作品的線上查詢管到, 並讓學弟妹有相關於專題製作上的經驗可以諮詢
 
+![preview](picture/preview.png)
 
 More Provision
 ==============
